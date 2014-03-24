@@ -1,0 +1,19 @@
+{
+    "name": "Organizer",
+    "version": "0.0.1",
+    "description": "An organizer tool for work and study.",
+    "author": {
+        "name": "Romel Perez",
+        "email": "ronelprhone@gmail.com",
+        "url": "http://prhone.blogspot.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/prhonedev/organizer.git"
+    },
+    "private": false,
+    "dependencies": {
+        "express": "*",
+        "swig": "*"
+    }
+}

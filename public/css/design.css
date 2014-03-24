@@ -1,0 +1,36 @@
+/* design.css */
+
+#university {
+    width: 800px;
+    padding-bottom: 20px;
+}
+
+.univ-subj {
+    display: block;
+    padding: 4px 6px;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+.univ-subj > span {
+    display: inline-block;
+    float: right;
+}
+
+.univ-subj-term {
+    background: #7AED8F;
+}
+
+.univ-subj-prog {
+    background: #EEB37A;
+}
+
+.univ-subj-stack {
+    background: #A7AFFF;
+}
+
+.placeholder {
+    height: 24px;
+    border: 1px dotted #999;
+    border-radius: 4px;
+}
