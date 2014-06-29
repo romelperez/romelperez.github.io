@@ -1,0 +1,320 @@
+/*!
+ * PRHONE Amateur | Design
+ * Romel Pérez, 2014
+ **/
+
+/* -------------------------------------------------------------------------- */
+/* STRUCTURE & AESTHETICS */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #c4f6ff;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.separator {
+  width: 100%;
+  margin: 10px auto 50px auto;
+}
+
+section {
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px;
+}
+
+li {
+  line-height: 1.4 ;
+}
+
+header {
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+}
+
+header h1 {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 0 0 0 -40px;
+  font-weight: bold;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: #01FFFF;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(181, 232, 83, 0.1),
+               0 0 10px rgba(181, 232, 83, 0.1);
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+header h1:before {
+  content: "~$ ";
+  font-size: 24px;
+}
+
+header h2 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #CDCDCD;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* NAV & SECTIONS */
+
+nav {
+  display: block;
+  overflow: hidden;
+}
+
+.connectbtn {
+  position: relative;
+  display: block;
+  float: left;
+  width: 125px;
+  height: 35px;
+  margin: 4px 10px 0 0;
+  border: solid 1px #1f596d;
+}
+
+.connectbtn.blog { width: 100px; }
+.connectbtn.github { width: 110px; }
+.connectbtn.googleplus { width: 140px; }
+
+.connectbtn.blog .socialicon { background-image: url(../img/blog.png); }
+.connectbtn.github .socialicon { background-image: url(../img/github.png); }
+.connectbtn.googleplus .socialicon { background-image: url(../img/googleplus.png); }
+
+.blacktrans {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.4;
+  -moz-transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.connectbtn:hover .blacktrans {
+  background: #005888;
+}
+
+.connectbtn .connectbtnlabel {
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  float: left;
+  margin: 10px 0 0 35px;
+}
+
+.socialicon {
+  float: left;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.corner {
+  background: url(../img/cornersprite.png) no-repeat;
+  display: block;
+  position: absolute;
+  z-index: 999;
+}
+
+.innercornersmall { width: 21px; height: 21px; }
+.innercornersmall-tl { top: -9px; left: -9px; background-position: 0 -85px; }
+.innercornersmall-tr { top: -9px; right: -9px; background-position: -21px -85px; }
+.innercornersmall-bl { bottom: -9px; left: -9px; background-position: -42px -85px; }
+.innercornersmall-br { bottom: -9px; right: -9px; background-position: -63px -85px; }
+
+.innercorner { width: 14px; height: 14px; }
+.innercorner-tl { top: -1px; left: -1px; background-position: 0 -71px; }
+.innercorner-tr { top: -1px; right: -1px; background-position: -14px -71px; }
+.innercorner-bl { bottom: -1px; left: -1px; background-position: -28px -71px; }
+.innercorner-br { bottom: -1px; right: -1px; background-position: -42px -71px; }
+
+.innercontainer {
+  position: relative;
+  border: solid 1px #17485a;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* SEPARATOR */
+
+.fullwidth .gear { 
+  width:100%; 
+  height:1px; 
+  margin:2px 0; 
+  background:#21DFE7; 
+  position:absolute;
+  box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.7);
+  -moz-animation: fullexpand 2s ease-out;
+  -webkit-animation: fullexpand 2s ease-out;
+  animation: fullexpand 2s ease-out;
+}
+
+@-moz-keyframes fullexpand {
+  0%  { width:0px;}
+  100%{ width:100%;}  
+}
+@-webkit-keyframes fullexpand {
+  0%  { width:0px;}
+  100%{ width:100%;}  
+}
+@keyframes fullexpand {
+  0%  { width:0px;}
+  100%{ width:100%;}  
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* CONTENT */
+
+#main-content {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+section img {
+  max-width: 100%
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: #CAFDFF;
+  letter-spacing: -0.03em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(181, 232, 83, 0.1),
+               0 0 10px rgba(181, 232, 83, 0.1);
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #79fdff;
+  text-shadow: 0 0 30px #79fdff;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+
+h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #999;
+  margin: 0 0 5px 0;
+}
+
+dt {
+  font-style: italic;
+  font-weight: bold;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li:before {
+  content: ">>";
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: 13px;
+  color: #b5e853;
+  margin-left: -37px;
+  margin-right: 21px;
+  line-height: 16px;
+}
+
+blockquote {
+  color: #aaa;
+  padding-left: 10px;
+  border-left: 1px dotted #666;
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  font-size: 14px;
+  color: #b5e853;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  text-wrap: normal;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+table {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+th {
+  text-align: left;
+  border-bottom: 1px dashed #b5e853;
+  padding: 5px 10px;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px dashed #b5e853;
+  color: #b5e853;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* LINKS */
+
+a {
+  color: #63c0f5;
+  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+}
+
+/* Clearfix */
+
+.cf:before, .cf:after {
+  content:"";
+  display:table;
+}
+
+.cf:after {
+  clear:both;
+}
+
+.cf {
+  zoom:1;
+}

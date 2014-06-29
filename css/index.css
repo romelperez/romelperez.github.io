@@ -1,0 +1,18 @@
+/*!
+ * PRHONE Amateur | Index
+ * Romel Pérez, 2014
+ **/
+
+h2,
+.connectbtn,
+.connectbtn .socialicon,
+.connectbtn .connectbtnlabel,
+.innercontainer,
+.innercontainer span {
+  display: none;
+}
+
+.socialicon {
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}

@@ -1,4 +1,3 @@
-Organizer (0.0.1-prealpha)
-==========================
+# PRHONE Amateur
 
-An organizer tool for work and study.
+Algunos proyectos personales que he creado por afición.
