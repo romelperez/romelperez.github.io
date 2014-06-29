@@ -1,0 +1,14 @@
+/*!
+ * PRHONE Applications
+ * Project | Component
+ * Romel Pérez, 2014
+ **/
+
+/* -------------------------------------------------------------------------- */
+/* COMMENT */
+
+.container {
+    width: 96%;
+    max-width: 1200px;
+    margin: 10px auto;
+}

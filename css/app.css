@@ -1,0 +1,80 @@
+/*!
+ * PRHONE Amateur | Applications | Design
+ * Romel Pérez, 2014
+ **/
+
+/* -------------------------------------------------------------------------- */
+/* APPLICATIONS */
+
+.app-header {
+  display: block;
+  width: 96%;
+  margin: 10px auto;
+}
+
+.app-header h1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #01FFFF;
+}
+.app-header h1:before {
+  content: "~#";
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+.app-header .home {
+  display: inline-block;
+  float: right;
+  margin: 10px 4px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #01FFFF;
+}
+
+.app {
+  display: none;
+}
+
+.separator {
+  margin-bottom: 10px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* INTERACTIVITY */
+
+.app-header h1,
+.app-header .home {
+  display: none;
+}
+
+.fullwidth .gear {
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* CONTENT */
+
+header h2 {
+  margin-bottom: 0;
+  color: #A6F4FF;
+  text-shadow: 0 0 30px #79fdff;
+  -moz-transition: all 1s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+header h2:hover, header h2:focus {
+  color: #00A3FF;
+  text-shadow: 0 0 20px #00CCFF;
+}
+h3 {
+  font-weight: normal;
+}

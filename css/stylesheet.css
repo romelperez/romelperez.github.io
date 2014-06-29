@@ -51,7 +51,6 @@ header h1 {
   line-height: 1.5;
   margin: 0 0 0 -40px;
   font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #01FFFF;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
@@ -151,6 +150,12 @@ nav {
 .innercorner-bl { bottom: -1px; left: -1px; background-position: -28px -71px; }
 .innercorner-br { bottom: -1px; right: -1px; background-position: -42px -71px; }
 
+.largeplus { width: 71px; height: 71px; }
+.largeplus-tl { top: -32px; left: -32px; }
+.largeplus-tr { top: -32px; right: -32px; background-position: -71px 0; }
+.largeplus-bl { bottom: -32px; left: -32px; background-position: -142px 0; }
+.largeplus-br { bottom: -32px; right: -32px; background-position: -213px 0; }
+
 .innercontainer {
   position: relative;
   border: solid 1px #17485a;
@@ -200,7 +205,7 @@ section img {
   max-width: 100%
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #CAFDFF;
@@ -209,12 +214,24 @@ h1, h2, h3, h4, h5, h6 {
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);
 }
+h3, h4, h5, h6 {
+  color: #79fdff;
+  text-shadow: 0 0 30px #79fdff;
+  -moz-transition: all 1s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+h3:hover, h3:focus,
+h4:hover, h4:focus,
+h5:hover, h5:focus,
+h6:hover, h6:focus {
+  color: #00A3FF;
+  text-shadow: 0 0 20px #00CCFF;
+}
 
 h3 {
   margin-bottom: 10px;
   font-size: 16px;
-  color: #79fdff;
-  text-shadow: 0 0 30px #79fdff;
 }
 
 h4 {
@@ -247,9 +264,9 @@ ul li:before {
   content: ">>";
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 13px;
-  color: #b5e853;
-  margin-left: -37px;
-  margin-right: 21px;
+  color: #26C0C0;
+  margin-left: -30px;
+  margin-right: 10px;
   line-height: 16px;
 }
 
