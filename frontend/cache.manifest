@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# version 1.0.5
+# version 1.0.6
 
 # Cache normal
 CACHE:
@@ -8,6 +8,7 @@ offline.html
 html5.html
 css3.html
 javascript1.6.html
+../
 ../index.html
 ../favicon.ico
 ../css/frontend/frontend.css
@@ -36,6 +37,8 @@ javascript1.6.html
 ../img/frontend/video.jpg
 ../img/frontend/github.png
 ../img/frontend/folder.png
+../img/frontend/device.png
+../img/frontend/processor.png
 ../img/googleplus.png
 ../img/blog.png
 ../img/twitter.png

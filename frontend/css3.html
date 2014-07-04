@@ -10,9 +10,8 @@
         <link rel="stylesheet" href="../css/frontend/languages/css3.css">
     </head>
     <body>
-        <p>Lo siento, estoy trabajando todavía en esto...</p>
         <!-- // APP // -->
-        <!--<div class="app-header">
+        <div class="app-header">
             <h1>PRHONE --amateur --frontend</h1>
             <a href="../index.html" class="home">cd /index</a>
         </div>
@@ -22,93 +21,102 @@
             </div>
         </div>
 
-        <!-- // FRONTEND // --
+        <!-- // CSS3 // -->
         <div id="frontend" class="app container">
             <header>
-                <h2>HTML5</h2>
+                <h2>CSS3</h2>
             </header>
 
             <section>
                 <h2>Border Radius</h2>
-                <p>This propertie changes the border radius of a object in display <i>block-like</i>.</p>
-                <div class="box blue" style="border-radius: 10px 0 20px 60px"></div>
+                <p>Esta propiedad cambia el radio del borde de un objeto con la propiedad display similar a 'block'.</p>
+                <p>Se puede crear con <code>border-radius: lt rt rb lb</code>.</p>
+                <div id="border-radius" class="box blue"></div>
             </section>
 
             <section>
                 <h2>Box Shadow</h2>
-                <p>With this propertie you can create an box shadow effect. Four parameters: x offset, y offset, blur and color.</p>
-                <div class="box inlblo green" style="box-shadow: 0 20px 20px black;"></div>
+                <p>El efecto se puede crear con <code>box-shadow: Xoffset Yoffset blur color</code>.</p>
+                <div id="box-shadow" class="box inlblo green"></div>
             </section>
 
             <section>
                 <h2>Text Shadow</h2>
-                <p>The <code>text-shadow</code> propertie has 4 parameters: x offset, y offset, blur and color.</p>
-                <div id="textshadow">Text Shadow Effect</div>
+                <p>Esta propiedad se puede aplicar con <code>text-shadow: Xoffset Yoffset blur color</code>.</p>
+                <div id="text-shadow">Text Shadow Effect</div>
             </section>
 
             <section>
                 <h2>Multiple Background Images</h2>
-                <p>You can put for each images separated by comma: url, repetition, y position and x position.</p>
+                <p>Én el <code>background</code> se pueden colocar fondos distintos separados por comas con: <code>url repetition Yposition Xposition</code>.</p>
                 <div id="multiple-backgrounds-images" class="boxbig"></div>
             </section>
 
             <section>
                 <h2>Opacity and RGBA</h2>
-                <p>Opacity value of <b>0.7</b>.</p>
+                <p>Opacidad valor de <b>0.7</b>.</p>
                 <div id="opacity" class="box yellow"></div>
-                <p>Background with RGBA value of <b>0, 0, 0, 0.7</b>.</p>
-                <div class="box" style="background-color: rgba(0,0,0,0.7);"></div>
+
+                <p>Fondo con color <code>rgba(255, 143, 0, 0.7)</code>.</p>
+                <div id="opacity-rgba" class="box"></div>
             </section>
 
             <section>
                 <h2>Transitions</h2>
-                <p>Move over this layout and see the transition effect. The <code>transition</code> parameters are: propertie, time, effect (ease, linear, ease-in, ease-out...) and delay.</p>
-                <div id="transitionBasic" class="box"></div>
-                <p>Its activated by states like: :hover, :focus, :active... And it can be used with various properties.</p>
-                <p><a id="transitionMultiple" href="#">An multiple transition</a></p>
-                <p>A complete transition effect can be to see moving the mouse over below:</p>
-                <div id="transitionEffect"></div>
+
+                <p>Mueve el mouse sobre esta capa y observa el efecto: <code>transition: property time effect(ease, linear, ease-in, ease-out...) delay</code>.</p>
+                <div id="transition-basic" class="box"></div>
+
+                <p>Los estados que activa la transición son: :hover, :focus, :active. Puede ser usado con una, varias propiedades o todas para transicionar al aplicarse los estados en el objeto.</p>
+                <p><a id="transition-multiple" href="#">Una transición multiple</a></p>
+
+                <p>Un efecto de transición completa se puede observar al mover el mouse sobre esto:</p>
+                <div id="transition-effect"></div>
             </section>
 
             <section>
                 <h2>Transforms</h2>
                 <h3>Scale</h3>
-                <p>Propertie <code>transform</code> in :hover state with scale(N) value, where N is an integer.</p>
-                <div id="transformScale" class="box yellow"></div>
+                <p>Transformar el objeto con <code>transform: scale(N)</code>, donde N es un entero.</p>
+                <div id="transform-scale" class="box yellow"></div>
+
                 <h3>Rotate</h3>
-                <p>It accepts degrees values. Positive and nevagive values.</p>
-                <div id="transformRotate" class="box red"></div>
+                <p>Transformar un objeto en su ángulo en grados, positivos o negativos. <code>transform: rotate(degress)</code>.</p>
+                <div id="transform-rotate" class="box red"></div>
+
                 <h3>Skew</h3>
-                <p><code>skewX(Xdeg)</code>, <code>skewY(Ydeg)</code> and <code>skew(Xdeg, Ydeg)</code> create this effect:</p>
-                <div id="transformSkewX" class="box inlblo red"></div>
-                <div id="transformSkewY" class="box inlblo green"></div>
-                <div id="transformSkew" class="box inlblo blue"></div>
+                <p>Transformaciones <code>skewX(Xdeg)</code>, <code>skewY(Ydeg)</code> y <code>skew(Xdeg, Ydeg)</code> crean los siguientes efectos:</p>
+                <div id="transform-skewX" class="box inlblo red"></div>
+                <div id="transform-skewY" class="box inlblo green"></div>
+                <div id="transform-skew" class="box inlblo blue"></div>
+
                 <h3>Translate</h3>
-                <p>You can translate an element from an x,y position to another. And you can join more than one.</p>
-                <div id="transformTranslate" class="box cyan"></div>
+                <p>Se puede transladar un elemento en coordenadas cartesionas. <code>transform: translate(X, Y)</code>.</p>
+                <div id="transform-translate" class="box cyan"></div>
             </section>
 
             <section>
                 <h2>Gradients</h2>
-                <p>You can create gradients everywhere that you can put a background image. You can set origins and degrees to control where it begins.</p>
-                <div id="gradientNormal" class="box inlblo"></div>
-                <div id="gradientAngle" class="box inlblo"></div>
+                <p>Se pueden crear gradientes donde sea que se puede colocar una imágen de fondo.</p>
+                <div id="gradient-normal" class="box inlblo"></div>
+                <div id="gradient-angle" class="box inlblo"></div>
             </section>
 
             <section>
                 <h2>Animations</h2>
-                <p>An infinite animation in a normal tag.</p>
-                <div id="animNormal" class="box">This is an animation!</div>
-                <p>An animation with an JavaScript trigger.</p>
-                <button id="animTriggerButton" data-state="offline">Active</button>
-                <div id="animTrigger" class="box purple"></div>
+                <p>Una animación infinita en una etiqueta normal.</p>
+                <div id="anim-normal" class="box">¡Esto es una animación!</div>
+
+                <p>Esta animación es colocada en este objeto mediante JavaScript. La idea es agregar o quitar clases que activen las animaciones.</p>
+                <button id="anim-trigger-button" data-state="offline">Activar animación</button>
+                <div id="anim-trigger" class="box purple"></div>
             </section>
         </div>
 
-        <!-- // SCRIPTS // --
+        <!-- // SCRIPTS // -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="../js/plugins.js"></script>
         <script src="../js/app.js"></script>
-        <script src="../js/frontend/languages/css3.js"></script>-->
+        <script src="../js/frontend/languages/css3.js"></script>
     </body>
 </html>

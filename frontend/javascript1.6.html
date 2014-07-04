@@ -7,90 +7,137 @@
         <link rel="stylesheet" href="../css/stylesheet.css">
         <link rel="stylesheet" href="../css/app.css">
         <link rel="stylesheet" href="../css/frontend/frontend.css">
-        <link rel="stylesheet" href="../css/frontend/languages/javascript1.6.css">
+        <!--link rel="stylesheet" href="../css/frontend/languages/javascript1.6.css"-->
     </head>
     <body>
-        <p>Lo siento, estoy trabajando todavía en esto...</p>
-        <!--<header role="banner">
-            <h1>JavaScript 1.8 HTML 5 Tests</h1>
-            <img class="logo" src="/img/logos/js.png">
-        </header>
-
-        <section>
-            <h2>Session and Local Storage</h2>
+        <!-- // APP // -->
+        <div class="app-header" role="banner">
+            <h1>PRHONE --amateur --frontend</h1>
+            <a href="../index.html" class="home">cd /index</a>
+        </div>
+        <div class="separator">
             <div>
-                <div>
-                    <form id="sesloc" name="sesloc" action="#">
-                        <label for="seslocSession"><input id="seslocSession" name="seslocstogare" type="radio" value="session" checked> sessionStogare</label><br>
-                        <label for="seslocLocal"><input id="seslocLocal" name="seslocstogare" type="radio" value="local"> localStorage</label>
-                    </form>
-                </div>
-                <div>
-                    <button id="seslocSet">Set</button>
-                    <input id="seslocSetKey" type="text" placeholder="Key">
-                    <input id="seslocSetVal" type="text" placeholder="Value">
-                </div>
-                <div>
-                    <button id="seslocGet">Get</button>
-                    <input id="seslocGetKey" type="text" placeholder="Key">
-                    <input id="seslocGetVal" type="text" readonly>
-                </div>
-                <div>
-                    <button id="seslocRem">Remove</button>
-                    <input id="seslocRemKey" type="text" placeholder="Key">
-                </div>
-                <div>
-                    <button id="seslocClear">Clear</button>
-                    <button id="seslocLength">Length</button>
-                    <input id="seslocLengthVal" type="text" placeholder="0" readonly>
-                </div>
-                <div>
-                    <button id="seslocKey">Key</button>
-                    <input id="seslocKeyNumber" type="text" placeholder="0">
-                    <input id="seslocKeyName" type="text" readonly>
-                </div>
+                <div class="gear"></div>
             </div>
-        </section>
+        </div>
 
-        <section>
-            <h2>Application Cache</h2>
-            <p>To test if there is updated the cache manifest, press this button: </p>
-            <div><button id="cacheTest">Test Updates</button> <span id="cacheResp">&nbsp;</span></div>
-            <p>Try to change the <b>cache.manifest</b> file while you are using the application and test the cache.</p>
-        </section>
+        <!-- // FRONTEND // -->
+        <div id="frontend" class="app container" role="main">
+            <header>
+                <h2>JavaScript 1.6 (ECMAScript 5th Edition)</h2>
+            </header>
 
-        <section>
-            <h2>Draggable</h2>
-            <p>Drag this layout.</p>
-            <div id="dragdropFoobar" draggable="true"></div>
-            <p>And drop on here.</p>
-            <div id="dragdropCatcher"></div>
-            <p>You can drop an image file from desktop onto here.</p>
-            <div id="dragdropImg"></div>
-        </section>
+            <section>
+                <h2>Provenance</h2>
+                <p>Los aspectos principales de JavaScript fueron inspirados:</p>
+                <ul>
+                    <li>Síntaxis <strong>Java</strong></li>
+                    <li>Funciones de <strong>Scheme</strong></li>
+                    <li>Herencia prototipada de <strong>Self</strong></li>
+                    <li>Expresiones regulares de <strong>Perl</strong></li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Web Worker</h2>
-            <p>Calculate the pixels on the canvas in another thread with a:</p>
-            <button id="webworkerTrigger">Web Worker</button>
-            <button id="webworkerTest">Test While It's Working</button>
-            <span id="webworkerTestSpace">&nbsp;</span>
-            <canvas id="webworkerCanvas" class="block" width="800" height="500"></canvas>
-        </section>
 
-        <section>
-            <h2>History</h2>
-            <p>You can use this API to change the URL without refreshing the page and manage this with the application.</p>
-            <div>
-                <button id="historyToggle" data-state="show">Show</button>
-                <button id="historyReplace">Replace State</button>
-            </div>
-            <p id="historyText" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>-->
+            <section>
+                <h2>Reserved Words</h2>
+                <p>Palabras reservadas del lenguaje JavaScript.</p>
+<pre><code>abstract boolean break byte case catch char class const continue debugger default
+delete do double else enum export extends false final finally float for function goto
+if implements import in instanceof int interface long native new null package private
+protected public return short static super switch synchronized this throw throws
+transient true try typeof var volatile void while with
+</code></pre>
+            </section>
+
+
+            <section>
+                <h2>Array Methods</h2>
+                <p>Métodos de objetos array.</p>
+<pre><code>// array.concat(item...)
+var a = ['a', 'b', 'c'];
+var b = ['x', 'y', 'z'];
+var c = a.concat(b, true);
+// c is ['a', 'b', 'c', 'x', 'y', 'z', true]
+
+// array.join(separator)
+var a = ['a', 'b', 'c'];
+var b = a.join('');  // c is 'abc'
+
+// array.reverse()
+var a = ['a', 'b', 'c'];
+var b = a.reverse();
+// both a and b are ['c', 'b', 'a']
+
+
+// array.push(item...)
+var a = ['a', 'b', 'c'];
+var b = ['x', 'y', 'z'];
+var c = a.push(b, true);
+// a is ['a', 'b', 'c', ['x', 'y', 'z'], true] &amp;&amp; c is 5
+
+// array.unshift(item...)
+var a = ['a', 'b', 'c'];
+var r = a.unshift('?', '@');
+// a is ['?', '@' 'a', 'b', 'c'] &amp;&amp; r is 5
+
+
+// array.pop()
+var a = ['a', 'b', 'c'];
+var b = a.pop();  // a is ['a', 'b'] &amp;&amp; b is 'c'
+
+// array.shift()
+var a = ['a', 'b', 'c'];
+var b = a.shift();  // a is ['b', 'c'] &amp;&amp; b is 'a'
+
+
+// array.slice(start, endBefore)
+var a = ['a', 'b', 'c'];
+var b = a.slice(0, 1);  // b is ['a']
+var c = a.slice(1);  // c is ['b', 'c']
+var d = a.slice(1, 2);  // d is ['b']
+
+// array.splice(start, deleteCount, items...)
+var a = ['a', 'b', 'c'];
+var r = a.splice(1, 1, 'ache', 'bug');
+// a is ['a', 'ache', 'bug', 'c'] &amp;&amp; r is ['b']
+</code></pre>
+            </section>
+
+
+            <section>
+                <h2>Regular Expressions</h2>
+                <p>Algunas expresiones regulares comúnes.</p>
+<pre><code>// /regexp/g reemplazar todas las ocurrencias
+// /regexp/i case-insensitive: se ignoran mayúsculas y minúsculas
+var a = 'Romel Francisco Pérez Estrada';
+var b = a.replace(/r/gi, '@');
+// b is "@omel F@ancisco Pé@ez Est@ada"
+</code></pre>
+            </section>
+
+
+            <section>
+                <h2>Conversión</h2>
+                <p>Conversión números de base 10 a otra base numérica y viceversa.</p>
+<pre><code>// Convertir a base 10
+var converTo10 = function (n, b) {
+    return parseInt(n, b);
+};
+
+// Convertir de base10 a otra base
+var convertFrom10 = function (n, b) {
+    return n.toString(b);
+};
+</code></pre>
+            </section>
+
+        </div>
+
+        <!-- // SCRIPTS // -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/app.js"></script>
+        <!--script src="../js/frontend/languages/javascript1.6.js"></script-->
     </body>
 </html>
