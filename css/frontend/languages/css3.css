@@ -1,0 +1,409 @@
+/*!
+ * PRHONE Applications
+ * Web Languages Tests | Cascading Style Sheets
+ * Romel Pérez, 2014
+ **/
+
+/* ------------------------------------------------------------------------- */
+/* AESTHETICS */
+
+.block {
+	display: block !important;
+}
+
+.inlblo {
+	display: inline-block !important;
+}
+
+.box {
+	display: block;
+	margin: 20px;
+	width: 300px;
+	height: 120px;
+}
+
+.boxbig {
+	display: block;
+	width: 600px;
+	height: 300px;
+	margin: 20px;
+}
+
+.gray {
+	background-color: #DDD;
+}
+
+.black {
+	background-color: #222;
+}
+
+.red {
+	background-color: #D22;
+}
+
+.green {
+	background-color: #2D2;
+}
+
+.blue {
+	background-color: #22D;
+}
+
+.cyan {
+	background-color: #2DD;
+}
+
+.purple {
+	background-color: #D2D;
+}
+
+.yellow {
+	background-color: #DD2;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* STYLES */
+
+#textshadow {
+	display: inline-block;
+	margin: 20px;
+	font-size: 30px;
+	text-shadow: 0 10px 10px #000;
+}
+
+#opacity {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";  /* IE8 */
+	filter: alpha(opacity=70);  /* IE5-7 */
+	opacity: 0.7;
+}
+
+#multiple-backgrounds-images {
+	margin: 20px;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	background: url("/img/icons/file.png") no-repeat left top,
+				url("/img/icons/folder.png") repeat-x left bottom;
+}
+
+/* Transitions ------------------------------------------------------------- */
+
+#transitionBasic {
+	background: #B4B;
+	-webkit-transition: background 1s ease 0s;
+	transition: background 1s ease 0s;
+}
+
+#transitionBasic:hover {
+	background: #F0F;
+}
+
+#transitionMultiple {
+	font-size: 20px;
+	text-decoration: none;
+	color: #000;
+	background: #DD2;
+	-webkit-transition: color 1s ease 0s, background 1s ease 0s;
+	transition: color 1s ease 0s, background 1s ease 0s;
+}
+
+#transitionMultiple:focus,
+#transitionMultiple:hover {
+	color: #00F;
+	background: #2D2;
+}
+
+#transitionEffect {
+	width: 300px;
+	height: 100px;
+	margin: 10px;
+	background: #2DD;
+	-webkit-transition: all 1s ease-in .3s;
+	transition: all 1s ease-in .3s;
+}
+
+#transitionEffect:hover {
+	width: 400px;
+	height: 140px;
+	margin-left: 40px;
+	border-radius: 30px;
+	background: #0FF;
+}
+
+/* Transforms -------------------------------------------------------------- */
+
+#transformScale {
+	margin-left: 80px;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px #BB4;
+	-webkit-transition: -webkit-transform 1s ease-in-out 0s;
+	transition: transform 1s ease-in-out 0s;
+	-webkit-transform-origin: bottom left;
+	transform-origin: bottom left;
+}
+
+#transformScale:hover {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transform-origin: bottom left;
+	transform-origin: bottom left;
+}
+
+#transformRotate {
+	margin-left: 80px;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px #B44;
+	-webkit-transition: -webkit-transform 1s ease 0s;
+	transition: transform 1s ease 0s;
+}
+
+#transformRotate:hover {
+	-webkit-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+#transformSkewX,
+#transformSkewY,
+#transformSkew {
+	-webkit-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+}
+
+#transformSkewX:hover {
+	-webkit-transform: skewX(20deg);
+	transform: skewX(20deg);
+}
+
+#transformSkewY:hover {
+	-webkit-transform: skewY(20deg);
+	transform: skewY(20deg);
+}
+
+#transformSkew:hover {
+	-webkit-transform: skew(20deg, 20deg);
+	transform: skew(20deg, 20deg);
+}
+
+#transformTranslate {
+	-webkit-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+}
+
+#transformTranslate:hover {
+	-webkit-transform: translate(300px, 0) scale(2);
+	transform: translate(300px, 0) scale(2);
+}
+
+/* Gradients --------------------------------------------------------------- */
+
+#gradientNormal {
+	background-image: -webkit-linear-gradient(bottom, #00275E, #0A53AA);
+	background-image: -moz-linear-gradient(bottom, #00275E, #0A53AA);
+	background-image: linear-gradient(bottom, #00275E, #0A53AA);
+}
+
+#gradientAngle{
+	background-image: -webkit-linear-gradient(45deg, #DD3, #D3D);
+	background-image: -moz-linear-gradient(45deg, #DD3, #D3D);
+	background-image: linear-gradient(45deg, #DD3, #D3D);
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* ANIMATIONS */
+
+@-webkit-keyframes backgroundGlow {
+	from {
+		margin-left: 20px;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		background: red;
+	}
+
+	45%, 55% {
+		background: green;
+		border-radius: 30px;
+	}
+
+	40% {
+		-webkit-transform: scale(0.5) rotate(30deg);
+		transform: scale(0.5) rotate(30deg);
+	}
+
+	60% {
+		-webkit-transform: skewX(10deg) rotate(-30deg);
+		transform: skewX(10deg) rotate(-30deg);
+	}
+
+	to {
+		margin-left: 400px;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		background: blue;
+	}
+}
+
+@keyframes backgroundGlow {
+	from {
+		margin-left: 20px;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		background: red;
+	}
+
+	45%, 55% {
+		background: green;
+		border-radius: 30px;
+	}
+
+	40% {
+		-webkit-transform: scale(0.5) rotate(30deg);
+		transform: scale(0.5) rotate(30deg);
+	}
+
+	60% {
+		-webkit-transform: skewX(10deg) rotate(-30deg);
+		transform: skewX(10deg) rotate(-30deg);
+	}
+
+	to {
+		margin-left: 400px;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		background: blue;
+	}
+}
+
+#animNormal {
+	padding: 20px;
+	font-size: 20px;
+	-webkit-animation: backgroundGlow 3s ease-in-out infinite alternate 0s forwards;
+	animation: backgroundGlow 3s ease-in-out infinite alternate 0s forwards;
+}
+
+##animNormal:hover {
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;  /* or: running; */
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+
+	to {
+		opacity: 1;
+		width: 300px;
+		height: 120px;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+
+	to {
+		opacity: 1;
+		width: 300px;
+		height: 120px;
+	}
+}
+
+@-webkit-keyframes fadeOut {
+	from {
+		opacity: 1;
+		width: 300px;
+		height: 120px;
+	}
+
+	to {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+		width: 300px;
+		height: 120px;
+	}
+
+	to {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+}
+
+#animTrigger {
+	border-radius: 30px;
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+	-webkit-animation-timing-function: ease;
+	animation-timing-function: ease;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+.fadeOut {
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+	-webkit-animation-timing-function: ease;
+	animation-timing-function: ease;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* MEDIA QUERIES */
+
+/* Medium Display Only : Tablets */
+
+@media (min-width:481px) and (max-width:768px) {
+	body {
+		font-size: 1.2em;
+		line-height: 1.6em;
+		color: #333;
+	}
+	h1, h2, h3 {
+		color: black;
+		text-shadow: 0 2px 2px black;
+	}
+}
+
+/* Small Display Only : Smartphones */
+
+@media (max-width:480px) {
+	body {
+		font-size: 1.4em;
+		line-height: 1.8em;
+		color: #444;
+	}
+	h1, h2, h3 {
+		color: black;
+		text-shadow: 0 3px 3px black;
+	}
+}

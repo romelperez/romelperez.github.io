@@ -1,0 +1,43 @@
+/*!
+ * PRHONE Applications
+ * Project | Component
+ * Romel Pérez, 2014
+ **/
+
+/* ------------------------------------------------------------------------- */
+/* JavaScript */
+
+#dragdropFoobar,
+#dragdropCatcher{
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+#dragdropFoobar{
+    background: blue;
+    cursor: move;
+}
+
+#dragdropCatcher{
+    background: green;
+}
+
+#dragdropImg{
+    width: auto;
+    height: auto;
+    min-width: 200px;
+    min-height: 100px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    background: #CCC;
+}
+
+#webworkerCanvas{
+    margin: 2px;
+    border: 1px solid #999;
+    border-radius: 2px;
+}

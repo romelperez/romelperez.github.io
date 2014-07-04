@@ -1,0 +1,14 @@
+/*!
+ * PRHONE Amateur | Frontend | Design
+ * Romel Pérez, 2014
+ **/
+
+.container {
+    width: 96%;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+h3 {
+  margin: 20px 0 10px 0;
+}

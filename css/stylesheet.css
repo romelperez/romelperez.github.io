@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 li {
-  line-height: 1.4 ;
+  line-height: 1.4;
 }
 
 header {
@@ -70,6 +70,33 @@ header h2 {
   color: #CDCDCD;
 }
 
+form {
+    margin: 20px 6px;
+}
+
+input[readonly] {
+  border: 1px solid #333;
+  border-radius: 2px;
+  background-color: white;
+  color: #333;
+}
+
+
+/* Clearfix */
+
+.cf:before, .cf:after {
+  content:"";
+  display:table;
+}
+
+.cf:after {
+  clear:both;
+}
+
+.cf {
+  zoom:1;
+}
+
 
 /* -------------------------------------------------------------------------- */
 /* NAV & SECTIONS */
@@ -83,18 +110,20 @@ nav {
   position: relative;
   display: block;
   float: left;
-  width: 125px;
+  width: 140px;
   height: 35px;
   margin: 4px 10px 0 0;
   border: solid 1px #1f596d;
 }
 
-.connectbtn.blog { width: 100px; }
-.connectbtn.github { width: 110px; }
-.connectbtn.googleplus { width: 140px; }
+nav > a.connectbtn:last-child {
+  margin-right: 0;
+  width: 142px;
+}
 
 .connectbtn.blog .socialicon { background-image: url(../img/blog.png); }
 .connectbtn.github .socialicon { background-image: url(../img/github.png); }
+.connectbtn.twitter .socialicon { background-image: url(../img/twitter.png); }
 .connectbtn.googleplus .socialicon { background-image: url(../img/googleplus.png); }
 
 .blacktrans {
@@ -226,7 +255,7 @@ h4:hover, h4:focus,
 h5:hover, h5:focus,
 h6:hover, h6:focus {
   color: #00A3FF;
-  text-shadow: 0 0 20px #00CCFF;
+  text-shadow: 0 0 10px #00CCFF;
 }
 
 h3 {
@@ -285,6 +314,7 @@ pre {
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
+  border-radius: 2px;
   text-wrap: normal;
   overflow: auto;
   overflow-y: hidden;
@@ -319,19 +349,14 @@ hr {
 a {
   color: #63c0f5;
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+  -moz-transition: all 1s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
 }
 
-/* Clearfix */
-
-.cf:before, .cf:after {
-  content:"";
-  display:table;
-}
-
-.cf:after {
-  clear:both;
-}
-
-.cf {
-  zoom:1;
+a:hover,
+a:focus,
+a:active {
+  color: #00A3FF;
+  text-shadow: 0 0 10px #00CCFF;
 }

@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html lang="es" manifest="cache.manifest">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5 | Frontend | PRHONE Amateur</title>
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" href="../css/stylesheet.css">
+        <link rel="stylesheet" href="../css/app.css">
+        <link rel="stylesheet" href="../css/frontend/frontend.css">
+        <link rel="stylesheet" href="../css/frontend/languages/html5.css">
+    </head>
+    <body>
+        <!-- // APP // -->
+        <div class="app-header" role="banner">
+            <h1>PRHONE --amateur --frontend</h1>
+            <a href="../index.html" class="home">cd /index</a>
+        </div>
+        <div class="separator">
+            <div>
+                <div class="gear"></div>
+            </div>
+        </div>
+
+        <!-- // FRONTEND // -->
+        <div id="frontend" class="app container" role="main">
+            <header>
+                <h2>HTML5</h2>
+            </header>
+
+            <section role="complementary" style="display:none; margin:0;padding:0;">
+                <h2>HTML Hack</h2>
+                <p>Este truco se utiliza para NO cargar imágenes. El contenedor está ocultado y en su contenido, una etiqueta tiene un background.</p>
+                <div style="width: 100px; height: 100px; background: url('../img/frontend/photo1.png')"></div>
+            </section>
+
+            <section>
+                <h2>Tags</h2>
+                <p>Estas son algunas etiquetas de la especificación HTML5.</p>
+
+                <!-- // tag abbr // -->
+                <ol start="1"><li>Etiqueta <code>&lt;abbr&gt;</code>:</li></ol>
+                <p>Esto es un acrónimo: <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+
+                <!-- // tag mark // -->
+                <ol start="2"><li>Etiqueta <code>&lt;mark&gt;</code>:</li></ol>
+                <p>Resaltar algo como contenido marcado <mark>mark</mark>!</p>
+
+                <!-- // tag time // -->
+                <ol start="3"><li>Etiqueta <code>&lt;time&gt;</code>:</li></ol>
+                <p>Esto es un datetime: <time datetime="2013-12-28T17:01:55" pubdate="pubdate">sábado, 28 de diciembre del 2013</time> en Colombia. El atributo <code>pubdate</code> es cuando el artículo fue publicado.</p>
+            </section>
+
+            <section>
+                <h2>Attributes</h2>
+                <p>Estos son algunos atributos disponibles para etiquetas estándar.</p>
+
+                <!-- // attr contenteditable // -->
+                <ol><li>Atributo <code>contenteditable</code>:</li></ol>
+                <div contenteditable><span>Este contenido se puede editar!</span></div>
+
+                <!-- // attr draggable // -->
+                <ol start="2"><li>Atributo <code>draggable</code>:</li></ol>
+                <p draggable>Este contenido puede ser arrastrado!</p>
+
+                <!-- // attr hidden // -->
+                <ol start="3"><li>Atributo <code>hidden</code>:</li></ol>
+                <p>Este contenido está oculto: ¡<strong hidden="hidden">hidden</strong>!</p>
+
+                <!-- // attr data-~ // -->
+                <ol><li value="4">Atributo <code>data-SOMETHING</code> donde SOMETHING es personalizable. Nos sirve para guardar datos como valores de atributos en etiquetas.</li></ol>
+                <p data-something="Something">Por ejemplo, esta etiqueta tiene <code>data-something</code>. Se puede acceder a su valor mediante el objeto <code>DOMElement.dataset</code> del nodo del árbol DOM.</p>
+            </section>
+
+            <section>
+                <h2>ARIA and Roles</h2>
+                <p>Cuando quieres dar accesibilidad a usuarios, se pueden usar atributos <code>role</code> y <code>aria-ATTR</code>. Ellos se utilizan para definir "zonas" de la página que cambian dinámicamente y para asignar roles específicos. Ellos son usados en esta página.</p>
+            </section>
+
+            <section id="figure">
+                <h2>Figure</h2>
+                <p>Mostrar una figura, gráfica o imágen. Se utiliza con el atributo <code>aria-labelledby</code> para asociar el contenido con la figura.</p>
+                <figure>
+                    <img src="../img/frontend/photo2.jpg" aria-labelledby="figurecap01" alt="Natalia's photo">
+                    <figcaption id="figurecap01">This is the Natalia's photo.</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Microdata</h2>
+                <p>Esto es para crear contenido más semántico, especialmente para SEO. Utilizando el atributo <code>itemtype</code> e <code>itemscope</code> con las referencias a <a href="http://schema.org/" target="_blank">schema.org</a>.</p>
+                <article id="microdata" itemscope itemtype="http://schema.org/Person">
+                    <h3 itemprop="name">Natalia Contreras</h3>
+                    <img itemprop="photo" src="../img/frontend/photo1.jpg" alt="Natalia's photo">
+                    <div itemprop="description">Natalia es una estudiante de tecnología en Bucaramanga.</div>
+                    <ul itemprop="personal" itemscope itemtype="http://schema.org/Organization">
+                        <li itemprop="location">Bucaramanga, Colombia</li>
+                        <li itemprop="studies">Tecnología</li>
+                        <li itemprop="age">20 años de edad</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="inputtypes">
+                <h2>Input Types</h2>
+                <form>
+                    <fieldset>
+                        <legend>Nuevos tipos de &lt;input&gt;</legend>
+                        <div><input type="search" required placeholder="Search something..."></div>
+                        <div><input type="url" required title="Enter the correct URL!" placeholder="Valid URL"></div>
+                        <div><input type="email" required title="You need to enter the correct email address!" placeholder="Valid e-mail"></div>
+                        <div><input type="tel" required placeholder="Telephone number"></div>
+                        <div><input type="datetime" required placeholder="Date time"></div>
+                        <div><input type="date" required min="2013-10-16" max="2014-05-14" placeholder="Date"></div>
+                        <div><input type="time" required min="07:30" max="10:45" placeholder="Time"></div>
+                        <div><input type="number" required min="100" max="2000" step="20" placeholder="Number"></div>
+                        <div><input type="range" required min="0" max="10" step="1" placeholder="Range"></div>
+                        <div><input type="color" required placeholder="Color picker"></div>
+                    </fieldset>
+                    <br>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Send">
+                </form>
+            </section>
+
+            <section>
+                <h2>Input Behaviours</h2>
+                <p>Comportamientos de campos de textos. Se utilizan con el atributo <code>placeholder</code> para mostrar un texto cuando esté vacio el campo.</p>
+                <form>
+                    <p>Auto foco en un campo de texto con el atributo <code>autofocus</code>. No se utilizó explícitamente porque dañaba el diseño del sitio.</p>
+                    <input type="text">
+
+                    <p>Lista de datos para elegir como opciones de sugerencia en un campo de texto.</p>
+                    <input type="text" list="anlist" placeholder="">
+                    <datalist id="anlist">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Node.js">Node.js</option>
+                        <option value="MongoDB">MongoDB</option>
+                    </datalist>
+
+                    <p>Si se quiere deshabilitar el autocompletado.</p>
+                    <input type="text" autocomplete="off" placeholder="Esto no autocompleta">
+
+                    <p>Si se quiere validar un campo de texto con el atributo <code>pattern</code>.</p>
+                    <input type="tel" pattern="3[0-9]{2}-[0-9]{4}-[0-9]{3}" title="3XX-XXXX-XXX" placeholder="Esto valida un teléfono válido" size="50">
+
+                    <p>
+                        <span id="labelToInput1">Se pueden asociar etiquetas cualquiera como etiquetas <code>&lt;label&gt;</code> de una caja de texto.</span> <span id="labelToInput2">Puedes hacer click en ellas para conseguir el foco.</span>
+                    </p>
+                    <input aria-labelledby="labelToInput1 labelToInput2" type="text" placeholder="Cliquea las etiquetas anteriores" size="50">
+
+                    <p><input type="reset" value="Reset"> <input type="submit" value="Send"></p>
+                </form>
+            </section>
+
+            <section>
+                <h2>Grouping Inputs Logically, Disabled</h2>
+                <p>Se puede deshabilitar una agrupación de un formulario.</p>
+                <form>
+                    <fieldset disabled>
+                        <legend>Disabled Fieldset</legend>
+                        <input type="text" placeholder="Una caja de texto deshabilitada" size="40"><br>
+                        <input type="text" placeholder="Una caja de texto deshabilitada" size="40"><br>
+                        <input type="text" placeholder="Una caja de texto deshabilitada" size="40"><br>
+                        <input type="submit" value="Send">
+                    </fieldset>
+                </form>
+            </section>
+
+            <section>
+                <h2>Audio</h2>
+
+                <!-- // NORMAL AUDIO // -->
+                <h3>Normal Audio</h3>
+                <p>Reproducir un audio normalmente con el controlador nativo. Opciones en MP3 y OGG para ser cross-browser.</p>
+                <audio controls preload="auto">
+                    <source src="../sound/frontend/sound1.mp3">
+                    <source src="../sound/frontend/sound1.ogg">
+                </audio>
+
+                <!-- // AUDIO WITH BASIC CONTROLS // -->
+                <h3>Basic Audio Control</h3>
+                <p>Un audio interno manipulado mediante JavaScript.</p>
+                <div>
+                    <button id="audioPlay">Play</button>
+                    <button id="audioStop">Stop</button>
+                    <button id="audio1Second">1 Second</button>
+                    <button id="audioDuration">Duration</button>
+                    <span id="audioState">&nbsp;</span>
+                </div>
+
+                <!-- // INTERN AUDIO CONTROL // -->
+                <h3>Intern Audio Control</h3>
+                <p>Un audio interno manipulado y controlado gráficamente mediante controles personalizados.</p>
+                <div id="audcus">
+                    <audio id="audcusAudio" hidden preload="metadata">
+                        <source src="../sound/frontend/song.mp3">
+                        <source src="../sound/frontend/song.ogg">
+                    </audio>
+                    <div id="audcusSeek">
+                        <div id="audcusLoaded"></div>
+                    </div>
+                    <p id="audcusTimes">
+                        <span>Durado: <span id="audcusTimesElapsed">00:00:00</span></span> /
+                        <span>Duración: <span id="audcusTimesDuration">00:00:00</span></span>
+                    </p>
+                    <p>
+                        <button id="audcusControl">Play</button>
+                        <button id="audcusStop">Stop</button>
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Video</h2>
+                <p>Un video normal. Opciones en MP4 y OGG (video) para ser cross-browser.</p>
+                <video controls preload="metadata" poster="../img/frontend/video.jpg" width="640" height="360">
+                    <source src="../video/frontend/video.mp4" type="video/mp4">
+                    <source src="../video/frontend/video.ogg" type="video/ogg">
+                </video>
+            </section>
+
+            <section>
+                <h2>Session and Local Storage</h2>
+                <p>Controlar los datos guardados localmente del sitio y los guardados de la sessión.</p>
+                <div>
+                    <div>
+                        <form id="sesloc" name="sesloc" action="#">
+                            <label for="seslocSession"><input id="seslocSession" name="seslocstogare" type="radio" value="session" checked> sessionStogare</label><br>
+                            <label for="seslocLocal"><input id="seslocLocal" name="seslocstogare" type="radio" value="local"> localStorage</label>
+                        </form>
+                    </div>
+                    <div>
+                        <button id="seslocSet">Set</button>
+                        <input id="seslocSetKey" type="text" placeholder="Key">
+                        <input id="seslocSetVal" type="text" placeholder="Value">
+                    </div>
+                    <div>
+                        <button id="seslocGet">Get</button>
+                        <input id="seslocGetKey" type="text" placeholder="Key">
+                        <input id="seslocGetVal" type="text" readonly>
+                    </div>
+                    <div>
+                        <button id="seslocRem">Remove</button>
+                        <input id="seslocRemKey" type="text" placeholder="Key">
+                    </div>
+                    <div>
+                        <button id="seslocClear">Clear</button>
+                        <button id="seslocLength">Length</button>
+                        <input id="seslocLengthVal" type="text" placeholder="0" readonly>
+                    </div>
+                    <div>
+                        <button id="seslocKey">Key</button>
+                        <input id="seslocKeyNumber" type="text" placeholder="0">
+                        <input id="seslocKeyName" type="text" readonly>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Application Cache</h2>
+                <p>Verificar si se encuentra una nueva versión de la caché del sitio.</p>
+                <div>
+                    <button id="cacheTest">Verificar Actualizaciones</button>
+                    <span id="cacheResp">&nbsp;</span>
+                </div>
+                <p>Se se cambia el <b>cache.manifest</b> mientras se usa el sitio y se verifican actualizaciones, se verá su funcionalidad.</p>
+            </section>
+
+            <section>
+                <h2>Draggable</h2>
+                <p>Arrastrar esta etiqueta:</p>
+                <div id="dragdropFoobar" draggable="true"></div>
+                <p>Y sueltala en esta otra etiqueta:</p>
+                <div id="dragdropCatcher"></div>
+                <p>Puedes arrastrar y soltar imágenes del escritorio y soltarlas aquí:</p>
+                <div id="dragdropImg"></div>
+            </section>
+
+            <section>
+                <h2>Web Worker</h2>
+                <p>Utilizar un WebWorker para calcular los colores que se renderizarán en el siguiente canvas. Ya que es asíncrono el procesamiento con el WebWorker, podemos seguir trabajando en la página mientras se procesan los datos. Intenta presionar el boton de testeo.</p>
+                <div>
+                    <button id="webworkerTrigger">Calcular</button>
+                    <button id="webworkerTest">Testear mientras se trabaja</button>
+                    <span id="webworkerTestSpace">&nbsp;</span>
+                </div>
+                <canvas id="webworkerCanvas" class="block" width="800" height="500"></canvas>
+            </section>
+
+            <section>
+                <h2>History</h2>
+                <p>Puedes cambiar parcialmente la URL de la página sin actualizarla. Dependiendo del caso, se pueden activar estados de la aplicación.</p>
+                <div>
+                    <button id="historyToggle" data-state="show">Show</button>
+                    <button id="historyNormal">Normal</button>
+                </div>
+                <p id="historyText" style="display: none; font-size: 18px;">Esto sólo se mostrará si #show está activado en la URL de la página. En caso contrario permanecerá oculto. Esto ha sido programado para que funcione así.</p>
+            </section>
+
+        </div>
+
+        <!-- // SCRIPTS // -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/app.js"></script>
+        <script src="../js/frontend/languages/html5.js"></script>
+    </body>
+</html>

@@ -34,10 +34,23 @@
   font-weight: bold;
   text-decoration: none;
   color: #01FFFF;
+  -moz-transition: all 1s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+.app-header .home:hover,
+.app-header .home:focus,
+.app-header .home:active {
+  color: #00A3FF;
 }
 
 .app {
   display: none;
+}
+.app > section {
+  margin-bottom: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #075A5A;
 }
 
 .separator {
@@ -64,6 +77,11 @@
 /* CONTENT */
 
 header h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h2, header h2 {
   margin-bottom: 0;
   color: #A6F4FF;
   text-shadow: 0 0 30px #79fdff;
@@ -71,10 +89,13 @@ header h2 {
   -webkit-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
 }
+
+h2:hover, h2:focus,
 header h2:hover, header h2:focus {
   color: #00A3FF;
   text-shadow: 0 0 20px #00CCFF;
 }
+
 h3 {
   font-weight: normal;
 }
