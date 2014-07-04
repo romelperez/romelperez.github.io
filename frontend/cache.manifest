@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# version 1.0.6
+# version 1.0.7
 
 # Cache normal
 CACHE:
@@ -26,17 +26,12 @@ javascript1.6.html
 ../js/plugins.js
 ../js/index.js
 ../img/frontend/photo1.jpg
-../img/frontend/photo.png
+../img/frontend/photo2.png
 ../img/frontend/photo3.jpg
 ../img/frontend/css3.png
 ../img/frontend/html5.png
-../img/frontend/file.png
 ../img/frontend/js.png
-../img/frontend/photo2.jpg
-../img/frontend/processor.png
 ../img/frontend/video.jpg
-../img/frontend/github.png
-../img/frontend/folder.png
 ../img/frontend/device.png
 ../img/frontend/processor.png
 ../img/googleplus.png
@@ -46,14 +41,14 @@ javascript1.6.html
 ../img/github.png
 ../sound/loading.ogg
 ../sound/error.ogg
+../sound/frontend/song.mp3
+../sound/frontend/song.ogg
+../sound/frontend/sound1.mp3
 ../sound/frontend/sound1.ogg
 ../sound/frontend/sound2.mp3
-../sound/frontend/sound1.mp3
-../sound/frontend/song.ogg
-../sound/frontend/sound3.mp3
-../sound/frontend/song.mp3
-../sound/frontend/sound3.ogg
 ../sound/frontend/sound2.ogg
+../sound/frontend/sound3.mp3
+../sound/frontend/sound3.ogg
 ../sound/app-loaded.ogg
 ../sound/error.mp3
 ../sound/app-loaded.mp3
