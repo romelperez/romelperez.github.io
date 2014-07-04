@@ -161,20 +161,37 @@ app.html5.cache = function () {
     var cache = window.applicationCache;
     var cacheResp = document.getElementById('cacheResp');
     
+    // Mientras se está checando el cache
+    cache.addEventListener('checking', function (e) {
+        cacheResp.innerHTML = 'Verificando...';
+    }, false);
+
+    // Cuando se está descargando
+    cache.addEventListener('downloading', function (e) {
+        cacheResp.innerHTML += ' Descargando...';
+    }, false);
+
+    // Cuando haya verificado la cache
     cache.addEventListener('updateready', function(e) {
+
+        cacheResp.innerHTML += ' Archivos cacheados (para la próxima carga).';
 
         // El navegador ha descargado una nueva versión de la cache
         if (cache.status === cache.UPDATEREADY) {
-            cacheResp.innerHTML = 'Hay una nueva versión de la cache.';
-            if (confirm('Hay nuevos archivos. ¿Desea actualizar aplicación?')) {
+            cacheResp.innerHTML += ' Hay una nueva versión de la cache.';
+            if (confirm('Hay archivos nuevos por actualizar. '
+                + '¿Desea actualizar aplicación?')) {
                 window.location.reload();
             }
-        }
-        // No hay actualizaciones en la cache
-        else {
-            cacheResp.innerHTML = 'No hay nuevas actualizaciones en la cache.';
+        } else {
+            // Al parecer no hubieron cambios
         }
 
+    }, false);
+
+    // Si no hubo ninguna nueva actualización al verificar
+    cache.addEventListener('noupdate', function (e) {
+        cacheResp.innerHTML += ' No hay actualizaciones.';
     }, false);
 
 };
