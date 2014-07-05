@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# version 1.0.7
+# version 1.0.8
 
 # Cache normal
 CACHE:
@@ -39,28 +39,6 @@ javascript1.6.html
 ../img/twitter.png
 ../img/cornersprite.png
 ../img/github.png
-../sound/loading.ogg
-../sound/error.ogg
-../sound/frontend/song.mp3
-../sound/frontend/song.ogg
-../sound/frontend/sound1.mp3
-../sound/frontend/sound1.ogg
-../sound/frontend/sound2.mp3
-../sound/frontend/sound2.ogg
-../sound/frontend/sound3.mp3
-../sound/frontend/sound3.ogg
-../sound/app-loaded.ogg
-../sound/error.mp3
-../sound/app-loaded.mp3
-../sound/click.ogg
-../sound/writing.mp3
-../sound/app.mp3
-../sound/loading.mp3
-../sound/writing.ogg
-../sound/click.mp3
-../sound/app.ogg
-../video/frontend/video.ogg
-../video/frontend/video.mp4
 
 # Todos los demás recursos
 NETWORK:
