@@ -28,26 +28,26 @@ var id = function (i) { return document.getElementById(i); };
 var tag = function (t) { return document.getElementsByTagName(t); };
 var clss = function (c) { return document.getElementsByClassName(c); };
 var ev = function (o, e, f) {
-    var i;
-    o = typeof o === "string" ? id(o) : o;
-    if (typeof e === "function") {
-        f = e;
-        e = "click";
+  var i;
+  o = typeof o === "string" ? id(o) : o;
+  if (typeof e === "function") {
+    f = e;
+    e = "click";
+  }
+  if (typeof o.length === "number") {
+    for (i = 0; i < o.length; i += 1) {
+      o[i].addEventListener(e, f, false);
     }
-    if (typeof o.length === "number") {
-        for (i = 0; i < o.length; i += 1) {
-            o[i].addEventListener(e, f, false);
-        }
-    } else {
-        o.addEventListener(e, f, false);
-    }
+  } else {
+    o.addEventListener(e, f, false);
+  }
 };
 var queue = function (fn) {
-    if (window.ready) {
-        fn();
-    } else {
-        window.addEventListener("load", fn, false);
-    }
+  if (window.ready) {
+    fn();
+  } else {
+    window.addEventListener("load", fn, false);
+  }
 };
 
 // -------------------------------------------------------------------------- //
@@ -55,11 +55,11 @@ var queue = function (fn) {
 
 // Inherits a new object from another
 if (typeof Object.create !== 'function') {
-    Object.create = function (o) {
-        var F = function () {};
-        F.prototype = o;
-        return new F();
-    };
+  Object.create = function (o) {
+    var F = function () {};
+    F.prototype = o;
+    return new F();
+  };
 }
 
 // Detect the own properties
@@ -71,35 +71,35 @@ var member2 = obj2.hasOwnProperty('surname');  // member2 is false
 
 // Create a new method to an object-type
 Function.prototype.method = function (name, func) {
-    this.prototype[name] = func;
-    return this;
+  this.prototype[name] = func;
+  return this;
 };
 
 // Inherits properties to an object
 Function.method('inherits', function (Parent) {
-    this.prototype = new Parent();
-    return this;
+  this.prototype = new Parent();
+  return this;
 });
 
 // Access to a superior propertie
 Object.method('superior', function (name) {
-    var that = this;
-    var method = that[name];
-    return function () {
-        return method.apply(that, arguments);
-    };
+  var that = this;
+  var method = that[name];
+  return function () {
+    return method.apply(that, arguments);
+  };
 });
 
 // Modular object
 var mammal = function (spec) {
-    var that = {};
-    that.get_name = function () {
-        return spec.name;
-    };
-    that.says = function () {
-        return spec.saying || '';
-    };
-    return that;
+  var that = {};
+  that.get_name = function () {
+    return spec.name;
+  };
+  that.says = function () {
+    return spec.saying || '';
+  };
+  return that;
 };
 var myMammal = mammal({ name: 'Michu' });
 
@@ -171,34 +171,34 @@ var b = a.replace(/r/gi, '@');
 
 var app = {
 
-    convert: {
-        to10: function (n, b) { return parseInt(n, b); },
-        from10: function (n, b) { return n.toString(b); }
-    },
+  convert: {
+    to10: function (n, b) { return parseInt(n, b); },
+    from10: function (n, b) { return n.toString(b); }
+  },
 
-    secure: function () {
-        var prefix = '';
-        var seq = 0;
-        return {
-            set_prefix: function (p) { prefix = String(p); },
-            set_seq: function (s) { seq = s; },
-            gensym: function () {
-                var result = prefix + seq;
-                seq += 1;
-                delete this.set_prefix;
-                delete this.set_seq;
-                return result;
-            }
-        };
-    }
+  secure: function () {
+    var prefix = '';
+    var seq = 0;
+    return {
+      set_prefix: function (p) { prefix = String(p); },
+      set_seq: function (s) { seq = s; },
+      gensym: function () {
+        var result = prefix + seq;
+        seq += 1;
+        delete this.set_prefix;
+        delete this.set_seq;
+        return result;
+      }
+    };
+  }
 
 };
 
 // Presentation
 window.onload = function () {
-    var log = id('log');
-    var div = create('div');
-    div.textContent = '>>> Everything is okay!';
-    log.innerHTML = '';
-    log.appendChild(div);
+  var log = id('log');
+  var div = create('div');
+  div.textContent = '>>> Everything is okay!';
+  log.innerHTML = '';
+  log.appendChild(div);
 };

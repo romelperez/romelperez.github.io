@@ -5,30 +5,30 @@
 
 $(function ($) {
 
-    // Animación CSS3 activada/desactivada mediante JavaScript
-    $('#anim-trigger-button').on('click', function (e) {
+  // Animación CSS3 activada/desactivada mediante JavaScript
+  $('#anim-trigger-button').on('click', function (e) {
 
-        var $boton = $(this);
-        var $objeto = $('#anim-trigger');
+    var $boton = $(this);
+    var $objeto = $('#anim-trigger');
 
-        if ($boton.data('state') === 'offline') {
+    if ($boton.data('state') === 'offline') {
 
-            // Cambiar estado del boton
-            $boton.html('Desactivar animación').data('state', 'online');
+      // Cambiar estado del boton
+      $boton.html('Desactivar animación').data('state', 'online');
 
-            // Activar animación
-            $objeto.removeClass('fadeOut').addClass('fadeIn');
+      // Activar animación
+      $objeto.removeClass('fadeOut').addClass('fadeIn');
 
-        } else {
+    } else {
 
-            // Cambiar estado del boton
-            $boton.html('Activar animación').data('state', 'offline');
+      // Cambiar estado del boton
+      $boton.html('Activar animación').data('state', 'offline');
 
-            // Desactivar animación
-            $objeto.removeClass('fadeIn').addClass('fadeOut');
+      // Desactivar animación
+      $objeto.removeClass('fadeIn').addClass('fadeOut');
 
-        }
-        
-    });
+    }
+
+  });
 
 });
