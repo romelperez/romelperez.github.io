@@ -1,0 +1,9 @@
+{
+  "name": "prhone-amateur",
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.4.0",
+    "jquery": "^2.0.0",
+    "normalize-css": "normalize.css#^3.0.3",
+    "polymer": "^1.0.0"
+  }
+}
