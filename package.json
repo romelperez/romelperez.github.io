@@ -1,0 +1,23 @@
+{
+  "name": "prhone-amateur",
+  "version": "1.0.0",
+  "description": "PRHONE Amateur projects",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romelperez/romelperez.github.io.git"
+  },
+  "author": "Romel Pérez (romelperez.blogspot.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/romelperez/romelperez.github.io/issues"
+  },
+  "homepage": "https://github.com/romelperez/romelperez.github.io#readme",
+  "dependencies": {
+    "express": "4.x.x"
+  }
+}
