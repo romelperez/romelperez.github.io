@@ -15,13 +15,13 @@ body {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #c4f6ff;
   background-color: #111;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-size: 13px;
-  line-height: 1.4;
 }
 
 /* select text */
@@ -92,7 +92,7 @@ pre {
   overflow-y: hidden;
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   border-radius: 2px;
   text-wrap: normal;
   background-color: rgba(0, 0, 0, 0.9);
@@ -150,23 +150,23 @@ a:hover h6, a:focus h6, a:active h6 {
 }
 
 h1 {
-  font-size: 1.7em;
+  font-size: 1.7rem;
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 h3 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 h4 {
-  font-size: 1.15em;
+  font-size: 1.15rem;
 }
 h5 {
-  font-size: 1em;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 h6 {
-  font-size: 0.85em;
+  font-size: 0.85rem;
   text-transform: uppercase;
 }
 
@@ -274,7 +274,7 @@ caption {
   max-width: 100%;
   margin-bottom: 10px;
   border: 1px solid #5e5e5e;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 .pr-table > thead > tr > th,
 .pr-table > tbody > tr > th,
