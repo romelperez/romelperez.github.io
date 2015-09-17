@@ -1,27 +1,18 @@
-# PRHONE Amateur
+<img src="prhone-amateur.png">
 
-Showcase de algunos proyectos personales que he creado por afición.
+> [romelperez.github.io](http://romelperez.github.io)
 
-## Instalación
+Showcase de proyectos personales creados por afición.
 
-Es necesario tener instalado [node.js](http://nodejs.org) con el módulo
-[bower](http://bower.io) instalado globalmente.
+Se implementa la mini-biblioteca para crear interfaces gráficas geeky [PRHONE UI](https://github.com/romelperez/prhone-ui).
 
-En la carpeta del proyecto, instalar los paquetes de node:
+## Servidor de pruebas
 
-```bash
-$ npm install
-```
+El proyecto es enteramente front-end. Sin embargo, se requiere un servidor para
+ejecutar todas las funcionalidades correctamente.
 
-Instalar los componentes de bower:
-
-```bash
-$ bower install
-```
-
-## Ejecución
-
-Para ejecutar el servidor en el puerto `9000` (por defecto), en la carpeta del proyecto utilizar:
+Para ejecutar el servidor en el puerto `9000` (por defecto) usando [node.js](http://nodejs.org),
+en la carpeta del proyecto clonado utilizar:
 
 ```bash
 $ node server.js
