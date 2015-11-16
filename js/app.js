@@ -9,16 +9,16 @@ var app = app || {};
 // EVENTS //
 
 $(document).ready(function ($) {
-
+/*
   app.title = $('h1').html();
   $('h1').html('&nbsp;').css('display', 'inline-block');
 
   app.audio.set(['app', 'app-loaded', 'click'], '../');
-
+*/
 });
 
 window.onload = function () {
-
+/*
   var separatorAnimLength = 1000;
 
   setTimeout(function () {
@@ -49,5 +49,5 @@ window.onload = function () {
     }, 500);
     e.preventDefault();
   });
-
+*/
 };

@@ -2,66 +2,114 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title>Frontend | PRHONE Amateur</title>
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../css/stylesheet.css">
-    <link rel="stylesheet" href="../css/app.css">
-    <link rel="stylesheet" href="../css/frontend/frontend.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Frontend | PRHONE Amateur | Romel Pérez</title>
+    <meta name="description" content="Romel Pérez amateur projects">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/components/pr/css/design.css">
+    <link rel="stylesheet" href="/css/app.css">
+
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="/components/pr-button/pr-button.html">
+    <link rel="import" href="/components/pr-hr/pr-hr.html">
+    <link rel="import" href="/components/pr-container/pr-container.html">
+
+    <style>
+      .innercontainer {
+        display: inline-block;
+        margin: 20px;
+        padding: 0;
+      }
+
+      main img {
+        float: left;
+        width: 33%;
+        opacity: 0.7;
+        -webkit-transition: opacity 1s ease 0s;
+           -moz-transition: opacity 1s ease 0s;
+            -ms-transition: opacity 1s ease 0s;
+             -o-transition: opacity 1s ease 0s;
+                transition: opacity 1s ease 0s;
+      }
+      main img:hover,
+      main img:focus,
+      main img:active {
+        opacity: 1;
+      }
+    </style>
   </head>
   <body>
-    <!-- // APP // -->
-    <div class="app-header">
-      <h1>PRHONE --amateur --frontend</h1>
-      <a href="../index.html" class="home">cd /index</a>
-    </div>
-    <div class="separator">
-      <div>
-        <div class="gear"></div>
-      </div>
-    </div>
+    <header class="pr-wrapper">
+      <h1 class="pr-h1">prhone-amateur --frontend</h1>
+      <nav>
+        <a href="/">cd /</a>
+        <span>---</span>
+        <a href="/frontend">cd ..</a>
+        <span>---</span>
+        <a href="/frontend/html.html">cd html</a>
+      </nav>
+    </header>
 
-    <!-- // FRONTEND // -->
-    <div id="frontend" class="app container">
+    <pr-hr class="pr-wrapper-full"></pr-hr>
 
+    <main class="pr-wrapper">
       <header>
-        <h2>Frontend examples</h2>
-        <p>El código de la lógica o funcionamiento y el diseño de las aplicaciones utilizadas en los ejemplos como referencia no se exponen. Se puede acceder fácilmente a él descargando el proyecto desde el repositorio para mayor comodidad.</p>
-        <div>Cada ejemplo tiene una sección en HTML definida dentro de cada página, una sección en el archivo JavaScript especificado y en el código CSS si fue necesario. Está organizado de tal forma que sea fácil analizar un ejemplo.</div>
+        <h1>Frontend examples and experiments</h1>
+        <h2>Frontend examples and experiments</h2>
+        <h3>Frontend examples and experiments</h3>
+        <h4>Frontend examples and experiments</h4>
+        <h5>Frontend examples and experiments</h5>
+        <h6>Frontend examples and experiments</h6>
+        <p>El código de la lógica o funcionamiento y el diseño de las aplicaciones
+        utilizadas en los ejemplos como referencia no se exponen. Se puede acceder
+        fácilmente a él descargando el proyecto desde el repositorio para mayor
+        comodidad.</p>
+        <ul>
+          <li>The first one</li>
+          <li>The second one</li>
+          <li>The third one</li>
+          <li>The fourth one</li>
+          <li>The fifth one</li>
+        </ul>
+        <p>Cada ejemplo tiene una sección en HTML definida dentro de cada página,
+        una sección en el archivo JavaScript especificado y en el código CSS si fue
+        necesario. Está organizado de tal forma que sea fácil analizar un ejemplo.</p>
+        <ol>
+          <li>The first one</li>
+          <li>The second one</li>
+          <li>The third one</li>
+          <li>The fourth one</li>
+          <li>The fifth one</li>
+        </ol>
       </header>
 
       <section>
-        <h2>Languages</h2>
-
-        <div class="innercontainer">
-          <div class="corner largeplus largeplus-tl"></div>
-          <div class="corner largeplus largeplus-tr"></div>
-          <div class="corner largeplus largeplus-bl"></div>
-          <div class="corner largeplus largeplus-br"></div>
-          <a href="html5.html"><img src="../img/frontend/html5.png" alt="HTML5"></a>
-        </div>
-
-        <div class="innercontainer">
-          <div class="corner largeplus largeplus-tl"></div>
-          <div class="corner largeplus largeplus-tr"></div>
-          <div class="corner largeplus largeplus-bl"></div>
-          <div class="corner largeplus largeplus-br"></div>
-          <a href="css3.html"><img src="../img/frontend/css3.png" alt="CSS3"></a>
-        </div>
-
-        <div class="innercontainer">
-          <div class="corner largeplus largeplus-tl"></div>
-          <div class="corner largeplus largeplus-tr"></div>
-          <div class="corner largeplus largeplus-bl"></div>
-          <div class="corner largeplus largeplus-br"></div>
-          <a href="javascript1.6.html"><img src="../img/frontend/js.png" alt="JavaScript1.6"></a>
+        <h3>Lenguajes</h3>
+        <div class="clear">
+          <a href="/frontend/html.html">
+            <img src="/img/frontend/html5.png" alt="HTML5">
+          </a>
+          <a href="/frontend/css.html">
+            <img src="/img/frontend/css3.png" alt="CSS3">
+          </a>
+          <a href="/frontend/javascript.html">
+            <img src="/img/frontend/js.png" alt="JavaScript">
+          </a>
         </div>
       </section>
+    </main>
 
-    </div>
+    <footer class="pr-wrapper">
+      <p>&copy; Romel Pérez 2014 - 2015</p>
+    </footer>
 
-    <!-- // SCRIPTS // -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="../js/plugins.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>

@@ -77,7 +77,7 @@ app.body = function () {
 // EVENTS //
 
 $(document).ready(function ($) {
-
+/*
   app.title = $('h1').html();
   $('h1').html('&nbsp;');
 
@@ -100,5 +100,5 @@ $(document).ready(function ($) {
     }, 500);
     e.preventDefault();
   });
-
+*/
 });

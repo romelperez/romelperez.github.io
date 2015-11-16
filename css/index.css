@@ -1,8 +1,4 @@
-/*!
- * PRHONE Amateur | Index
- * Romel Pérez, 2014
- **/
-
+/*
 h1, h2,
 .connectbtn,
 .connectbtn .socialicon,
@@ -15,4 +11,40 @@ h1, h2,
 .socialicon {
   opacity: 0.1;
   filter: alpha(opacity=10);
+}
+*/
+
+.photo {
+  float: right;
+  margin-left: 10px;
+  border: 1px solid #62C1BE;
+}
+
+@media screen and (max-width: 600px) {
+  .photo {
+    display: none;
+  }
+}
+
+/*
+ * $NAV
+ */
+
+nav a pr-button {
+  float: left;
+  display: block;
+  width: 24%;
+  margin-left: 1.333%; /* (100-24*4)/3 = 4/3 */
+}
+nav a:first-child pr-button {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 500px) {
+  nav a pr-button {
+    width: 49%;
+    margin-left: 0;
+    margin-right: 1%;
+    margin-bottom: 5px;
+  }
 }

@@ -5,12 +5,38 @@
 
 var app = app || {};
 
+// DEBUG:
+window.addEventListener('load', function () {
+  var hrs = document.querySelectorAll('pr-hr');
+  for (var i=0; i<hrs.length; i++) {
+    hrs[i].classList.add('anim');
+  }
+});
+
+// -------------------------------------------------------------------------- //
+// Google Analitycs //
+
+/*(function(i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  i[r] = i[r] || function() {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date();
+  a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-50433259-1', 'auto');
+ga('send', 'pageview');*/
+
+
 // -------------------------------------------------------------------------- //
 // shuffleLetters //
 
-(function($){
+(function ($) {
 
-  $.fn.shuffleLetters = function(prop){
+  $.fn.shuffleLetters = function (prop) {
 
     var options = $.extend({
       "step"      : 2,            // How many times should the letters be changed
@@ -196,21 +222,3 @@ app.audio = {
   }
 
 };
-
-
-// -------------------------------------------------------------------------- //
-// Google Analitycs //
-
-/*(function(i, s, o, g, r, a, m) {
-  i['GoogleAnalyticsObject'] = r;
-  i[r] = i[r] || function() {
-    (i[r].q = i[r].q || []).push(arguments)
-  }, i[r].l = 1 * new Date();
-  a = s.createElement(o),
-  m = s.getElementsByTagName(o)[0];
-  a.async = 1;
-  a.src = g;
-  m.parentNode.insertBefore(a, m)
-})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
-ga('create', 'UA-50433259-1', 'auto');
-ga('send', 'pageview');*/
