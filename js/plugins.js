@@ -16,7 +16,7 @@ window.addEventListener('load', function () {
 // -------------------------------------------------------------------------- //
 // Google Analitycs //
 
-/*(function(i, s, o, g, r, a, m) {
+(function(i, s, o, g, r, a, m) {
   i['GoogleAnalyticsObject'] = r;
   i[r] = i[r] || function() {
     (i[r].q = i[r].q || []).push(arguments)
@@ -28,7 +28,7 @@ window.addEventListener('load', function () {
   m.parentNode.insertBefore(a, m)
 })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
 ga('create', 'UA-50433259-1', 'auto');
-ga('send', 'pageview');*/
+ga('send', 'pageview');
 
 
 // -------------------------------------------------------------------------- //
